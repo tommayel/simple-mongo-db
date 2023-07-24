@@ -7,12 +7,16 @@ const userSchema = new mongoose.Schema({
   },
   lastName: {
     type: String,
+    required: true,
   },
   email: {
     type: String,
+    required: true,
+    unique: true,
   },
   betaUser: {
     type: Boolean,
+    default: false,
   },
   birthDate: Date,
   pets: [{ type: String }],

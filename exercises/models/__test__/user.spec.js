@@ -35,6 +35,7 @@ describe("User model", () => {
         firstName: "Sasha",
       });
     } catch (e) {
+      console.log({ e });
       expect(e).toBeTruthy();
     }
   });
@@ -57,6 +58,7 @@ describe("User model", () => {
         },
       ]);
     } catch (e) {
+      console.log({ e });
       expect(e).toBeTruthy();
     }
   });
